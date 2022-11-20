@@ -255,7 +255,7 @@ a {
   font-size: 15px;
   line-height: normal;
   padding: 16px 30px;
-  letter-spacing: 2px;
+  letter-spacing: 0;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -352,7 +352,7 @@ a {
   font-size: 15px;
   line-height: normal;
   padding: 16px 30px;
-  letter-spacing: 2px;
+  letter-spacing: 0;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -803,6 +803,13 @@ a {
     Navigation
 ====================================== */
 /* top bar  */
+/* Navbar */
+.navbar-nav > li > a{
+  color: $PrimaryColor;
+}
+.navbar-nav > li > a.active{
+  color: $SecondaryColor
+}
 .top-bar-info {
   display: inline-block;
   vertical-align: middle;
@@ -4391,7 +4398,7 @@ h2.resp-tab-active span.resp-arrow {
     line-height: 1;
     margin-bottom: 20px;
     color: transparent;
-    letter-spacing: 30px;
+    letter-spacing: 0;
     -webkit-text-stroke: 2px $SecondaryColor;
   }
 }
@@ -4411,14 +4418,14 @@ h2.resp-tab-active span.resp-arrow {
 @media screen and (max-width: $tablet-xs-screen) {
   .error-wrapper h1 {
     font-size: 180px;
-    letter-spacing: 20px;
+    letter-spacing: 0;
   }
 }
 
 @media screen and (max-width: $mobile-sm-screen) {
   .error-wrapper h1 {
     font-size: 130px;
-    letter-spacing: 10px;
+    letter-spacing: 0;
   }
 }
 
@@ -5149,7 +5156,7 @@ a#cancel-comment-reply-link {
 
 .prev-link-page-info .date-details, .next-link-page-info .date-details {
   font-size: 14px;
-  letter-spacing: .025em;
+  letter-spacing: 0;
   line-height: 20px;
   margin-bottom: -2px;
 }
@@ -5211,7 +5218,7 @@ a#cancel-comment-reply-link {
 .extra-section h3 {
   font-size: 200px;
   color: #fff;
-  letter-spacing: 10px;
+  letter-spacing: 0;
   line-height: 1;
   opacity: .1;
 }
@@ -5609,7 +5616,7 @@ pre[class*="language-"] {
     content: "•••";
     font-size: 30px;
     left: 24px;
-    letter-spacing: 4px;
+    letter-spacing: 0;
     line-height: 12px;
     position: absolute;
     top: 24px;
@@ -5696,7 +5703,7 @@ pre[class*="language-"] {
     content: "•••";
     font-size: 30px;
     left: 24px;
-    letter-spacing: 4px;
+    letter-spacing: 0;
     line-height: 12px;
     position: absolute;
     top: 24px;

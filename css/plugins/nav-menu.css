@@ -18,11 +18,12 @@ header {
 }
 
 .navbar-brand img {
-  max-height: 52px;
+  max-height: 80px;
   transition-duration: 0.5s;
 }
 .navbar-header-custom {
-  padding: 17px 0 15px 0;
+  padding: 0 0 0 0;
+  align-self: center
 }
 .navbar-default {
   transition: all 0.5s ease 0s;
@@ -337,9 +338,14 @@ header {
     transition-duration: 0.5s;
   }
   .scrollHeader .navbar-header-custom {
-    padding: 10px 0;
+    padding:  0;
     transition-duration: 0.5s;
   }
+  
+  .scrollHeader .navbar-brand img {
+  max-height: 70px;
+  transition-duration: 0.5s;
+}
   .navbar-nav .megamenu {
     margin: 0;
     padding: 30px 15px;
