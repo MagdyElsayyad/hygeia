@@ -49,13 +49,11 @@
             var logodefault = $(".navbar-brand.logodefault img");
             if (scroll <= 50) {
                 $("header").removeClass("scrollHeader").addClass("fixedHeader");
-                logochange.attr('src', 'img/logos/logo-inner.png');
-                logodefault.attr('src', 'img/logos/logo.png');
+               
             } 
             else {
                 $("header").removeClass("fixedHeader").addClass("scrollHeader");
-                logochange.attr('src', 'img/logos/logo.png');
-                logodefault.attr('src', 'img/logos/logo.png');
+               
             }
         });
 
@@ -107,32 +105,7 @@
             removalDelay: 160
         });
 
-        /*------------------------------------
-            06. Date and Time Picker
-        --------------------------------------*/
-
-        $('.form_date').datetimepicker({
-            language:  'en',
-            weekStart: 1,
-            todayBtn:  1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 2,
-            minView: 2,
-            forceParse: 0
-        });
-
-        $('.form_time').datetimepicker({
-            language:  'en',
-            weekStart: 1,
-            todayBtn:  1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 1,
-            minView: 0,
-            maxView: 1,
-            forceParse: 0
-        });
+      
 
         /*------------------------------------
             07. Copy to clipboard
