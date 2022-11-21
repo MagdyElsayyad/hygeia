@@ -1264,7 +1264,7 @@ a:hover, a:active {
   display: inline-block;
 }
 .breadcrumb ul li:after {
-  content: "\f105";
+  content: "\f104";
   font-weight: 700;
   color: #ffffff;
   font-size: 16px;
@@ -5059,7 +5059,7 @@ footer > .container {
   color: #ffffff;
 }
 .footer-list-style1 li a:before {
-  content: "\f105";
+  content: "\f104";
   font-weight: 700;
   font-family: Font Awesome\ 5 Free;
   color: #ffffff;
