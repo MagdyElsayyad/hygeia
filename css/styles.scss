@@ -216,7 +216,7 @@ a {
   text-decoration: none;
   position: fixed;
   bottom: 20px;
-  mgmgRight: 20px;
+  left: 20px;
   display: none;
   border-radius: 50%;
   background: $PrimaryColor;
@@ -282,7 +282,7 @@ a {
   &:before {
     position: absolute;
     top: 50%;
-    mgmgRight: 0;
+    left: 0;
     margin: auto;
     width: 0;
     content: ' ';
@@ -479,23 +479,23 @@ a {
 }
 
 .border-start-radius-10 {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .border-end-radius-10 {
-  border-top-mgmgRight-radius: 10px;
-  border-bottom-mgmgRight-radius: 10px;
-}
-
-.border-start-md-radius-10 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
+.border-start-md-radius-10 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .border-end-md-radius-10 {
-  border-top-mgmgRight-radius: 10px;
-  border-bottom-mgmgRight-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 @media screen and (max-width: $tablet-xs-screen) {
@@ -505,8 +505,8 @@ a {
   }
 
   .border-end-md-radius-10 {
-    border-top-mgmgRight-radius: 0;
-    border-bottom-mgmgRight-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .border-start-sm-radius-10 {
@@ -610,7 +610,7 @@ a {
       transition: width 0.3s linear;
       font-size: 18px;
       top: 12px;
-      mgmgRight: 20px;
+      left: 20px;
     }
 
     &.active a {
@@ -651,7 +651,7 @@ a {
         font-weight: 600;
         font-family: Font Awesome\ 5 Free;
         vertical-align: middle;
-        padding-mgmgRight: 10px;
+        padding-left: 10px;
         position: relative;
         font-size: 14px;
       }
@@ -665,7 +665,7 @@ a {
       font-size: 14px;
       font-weight: 600;
       position: absolute;
-      mgmgRight: 15px;
+      left: 15px;
       text-align: center;
       border: 1px solid #ededed;
       background-color: #fafafa;
@@ -839,7 +839,7 @@ a {
 .top-bar-info li i {
   font-size: 16px;
   color: #fff;
-  margin-mgmgRight: 8px;
+  margin-left: 8px;
   margin-top: 0;
   display: inline-block;
   vertical-align: text-bottom;
@@ -847,7 +847,7 @@ a {
 
 .top-social-icon {
   padding: 0;
-  float: mgmgRight;
+  float: left;
   margin: 0;
 
   li {
@@ -859,10 +859,10 @@ a {
     padding: 0 7px;
 
     &:last-child {
-      padding-mgmgRight: 0;
+      padding-left: 0;
 
       a {
-        padding-mgmgRight: 0;
+        padding-left: 0;
       }
     }
 
@@ -1140,7 +1140,7 @@ a {
         width: 50px;
         height: 2px;
         background: #c9c9c9;
-        mgmgRight: -5px;
+        left: -5px;
         top: 48%;
         position: absolute;
       }
