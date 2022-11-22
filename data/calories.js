@@ -111,20 +111,13 @@ const calories = [
                 title: `الطماطم`,
                 cal: `56`
             },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
+           
         ]
     },
     {
         title: `الخضروات والدرنيات`,
         img: `2`,
-      typs:[
+      types:[
             {
                 title: `الخيار`,
                 cal: `12`
@@ -229,18 +222,7 @@ const calories = [
                 title: `الثوم`,
                 cal: `101`
             },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
+          
         ]
     },
     {
@@ -299,70 +281,7 @@ const calories = [
                 title: `حليب كامل الدسم`,
                 cal: `68`
             },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
+          
         ]
     },
     {
@@ -421,70 +340,7 @@ const calories = [
                 title: `المخ`,
                 cal: `116`
             },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
+         
         ]
     },
     {
@@ -543,70 +399,56 @@ const calories = [
                 title: `التونه المعلبه بدون زيت`,
                 cal: `96`
             },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
-            {
-                title: ``,
-                cal: ``
-            },
+            
         ]
     },
-]
+];
+
+
+
+const calsHtml = calories.map((e, i) => {
+
+    const types = e.types.map((type, typeI) => {
+        return `
+        <div class="nutritional-info">
+                            <h4 class="h6 mb-0">${type.title}</h4>
+                            <span class="seprator"></span>
+                            <span class="text-muted font-weight-600">${type.cal} سعرًا حراريًا</span>
+                        </div>
+        `;
+    });
+    return `<div class="col-lg-6 mt-2-6 ">
+    <div class="card border-0 border-radius-none">
+        <div class="card-body p-0">
+            <div class="border-bottom border-width-2 pb-3 mb-4">
+                <h4 class="mb-0">${e.title}</h4>
+            </div>
+            <ul class="list-style5 text-center text-sm-start">
+                <li>
+                    <div class="text-center text-sm-start d-sm-flex mb-4">
+                        <div class="flex-shrink-0 mx-auto text-center mb-4 mb-md-0">
+                            <img style="max-height: 150px;" src="../img/content/1.jpg" class="rounded" alt="...">
+                        </div>
+                       
+                    </div>
+                    <div class="mb-3">
+                        
+                    ${types}
+                       
+                    </div>
+                </li>
+            
+            </ul>
+        </div>
+    </div>
+</div>`;
+  });
+
+window.onload = () => {
+    console.log(
+        calsHtml
+    );
+    document.getElementById("calsWrapper").innerHTML = calsHtml.join('');
+ 
+  };
+  
