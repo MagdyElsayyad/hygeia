@@ -43,8 +43,7 @@ const negativeHabits = [
   },
   {
       title: 'التفكير السلبى ❌',
-      desc: `
-ازاى تتخلص من التفكير السلبي تابع معانا عشان تعرف تعالج نفسك من التفكير السلبى اتكلم مع هذه الافكار اتعرف عليها قل لها توقفى 
+      desc: `    عشان تعرف تعالج نفسك من التفكير السلبى اتكلم مع هذه الافكار اتعرف عليها قل لها توقفى 
 ولو شعرت بفكرة سيئه وقفها من البدايه متخلهاش تسيطر عليك ودا هيمنعك من ولادة افكار كثيرة .
 ومهم جدا نمارس رياضة .
 والتأمل والاسترخاء .`,
@@ -81,7 +80,7 @@ const habitsHtml = positiveHabits.map((e, i) => {
     
   <div class="row align-items-center ${i %2 ===0 ? 'flex-row-reverse': ''} justify-content-center  g-0 mb-2-9">
   <div class="col-md-5 col-xl-4 bg-img cover-background min-height-350 ${i %2 ===0 ? 'border-end-md-radius-10 border-bottom-sm-radius-10': 'border-start-md-radius-10 border-top-sm-radius-10'} "
-      data-background="../img/negative-habits/${e.img}.jfif"></div>
+      data-background="../img/positive-habits/${e.img}.jpg"></div>
   <div class="col-md-7 col-xl-6">
   <div class="author">
   <h4 class="display-27 font-weight-800 mb-0 text-center"> ${e.title}</h4>
