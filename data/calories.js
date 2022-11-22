@@ -427,7 +427,7 @@ const calsHtml = calories.map((e, i) => {
                 <li>
                     <div class="text-center text-sm-start d-sm-flex mb-4">
                         <div class="flex-shrink-0 mx-auto text-center mb-4 mb-md-0">
-                            <img style="max-height: 150px;" src="../img/content/1.jpg" class="rounded" alt="...">
+                            <img style="max-height: 150px;" src="../img/calories/${e.img}.jfif" class="rounded" alt="...">
                         </div>
                        
                     </div>
