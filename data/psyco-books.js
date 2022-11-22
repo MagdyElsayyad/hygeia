@@ -1,9 +1,4 @@
-const books = [
-    {
-        title: '',
-        desc: ``,
-        img: ''
-    },
+const negativeHabits = [
     {
         title: '',
         desc: ``,
