@@ -3071,9 +3071,7 @@ ul.resp-tabs-list {
   list-style: none;
   cursor: pointer;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  
 
   i {
     font-size: 20px;
@@ -3241,9 +3239,7 @@ h2.resp-tab-active span.resp-arrow {
       border-radius: 10px;
       border: 1px solid #ededed;
 
-      &:last-child {
-        margin-right: 0;
-      }
+    
     }
   }
 
@@ -3465,9 +3461,7 @@ h2.resp-tab-active span.resp-arrow {
       border-color: transparent transparent transparent $PrimaryColor;
     }
 
-    .resp-tabs-list li:last-child {
-      margin-bottom: 0 !important;
-    }
+  
 
     li.resp-tab-active {
       position: relative;

@@ -2633,9 +2633,6 @@ ul.resp-tabs-list {
   list-style: none;
   cursor: pointer;
 }
-.resp-tabs-list li:last-child {
-  margin-right: 0;
-}
 .resp-tabs-list li i {
   font-size: 20px;
   padding-right: 5px;
@@ -2788,9 +2785,6 @@ h2.resp-tab-active span.resp-arrow {
   padding: 0;
   border-radius: 10px;
   border: 1px solid #ededed;
-}
-.tab-style2 .resp-tabs-list li:last-child {
-  margin-right: 0;
 }
 .tab-style2 .resp-tabs-container {
   padding: 0px;
@@ -2970,9 +2964,6 @@ h2.resp-tab-active span.resp-arrow {
   border-style: solid;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #26c0f2;
-}
-.tab-style-3.resp-vtabs .resp-tabs-list li:last-child {
-  margin-bottom: 0 !important;
 }
 .tab-style-3.resp-vtabs li.resp-tab-active {
   position: relative;
