@@ -38,4 +38,38 @@ const books = [
         img: '6'
     },
    
-]
+];
+
+
+
+const booksHTML = books.map((e, i) => {
+    return `
+    <div  class="w-50 mt-2-9 float-${i%3!==0? 'start' : 'end'}">
+    <article class="card card-style4">
+        <div class="image-box text-end">
+            <img style="max-height: 200px" src="../img/psycho-books/${e.img}.jpg" class="border-radius-10" alt="...">
+            <div style="max-width: 50%;line-height: 1.3;" class="blog-date rounded-3">
+            ${e.title}
+            </div>
+        </div>
+        <div class="card-body border-radius-10">
+         
+            <h3 class="mb-3 h4"><a href="blog-details.html"></a></h3>
+            <p style="white-space:pre-line">
+            ${e.desc}
+            </p>
+        </div>
+    </article>
+</div>
+   
+        `;
+  });
+
+window.onload = () => {
+    if(document.getElementById("booksWrapper")){
+      document.getElementById("booksWrapper").innerHTML = booksHTML.join("");
+    }
+   
+ 
+  };
+  

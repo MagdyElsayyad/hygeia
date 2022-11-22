@@ -89,14 +89,50 @@ const books = [
         desc: `ملخص كتاب " فن التعامل مع الناس "
 التعامل مع الناس هو فن يحتاج إلى الكثير من الخبرة حتى يستطيع الفرد أن يتكيف مع غيره من الأفراد الذين يختلفون في الطبائع وفي السمات الشخصية.
 ومن أهم النصائح التي جاءت فى الكتاب : 
-‏1- أحصل على قدر من الراحة
+1- أحصل على قدر من الراحة
 2- لا تنزعج من توجيه النقد إليك 
 3- صاحب نفسك وكن أنت 
 4- حافظ على كرامة الشخص المهزوم أمامك
 5- إجعل العمل الجماعي سراً لنجاحك
 6- تخلى عن غضبك وتميز باللين والرفق  
-‏7- لا تقوم بموعظة أحد
+7- لا تقوم بموعظة أحد
 8- لا تحاسب الناس`,
         img: '9'
     },
-]
+];
+
+
+
+
+
+const booksHTML = books.map((e, i) => {
+    return `
+    <div  class="w-50 mt-2-9 float-${i%2!==0? 'start' : 'end'}">
+    <article class="card card-style4">
+        <div class="image-box text-end">
+            <img style="max-height: 200px" src="../img/social-books/${e.img}.${(i + 1) >= 8 ? 'jpeg': 'jfif'}" class="border-radius-10" alt="...">
+            <div style="max-width: 50%;line-height: 1.3;" class="blog-date rounded-3">
+            ${e.title}
+            </div>
+        </div>
+        <div class="card-body border-radius-10">
+         
+            <h3 class="mb-3 h4"><a href="blog-details.html"></a></h3>
+            <p style="white-space:pre-line">
+            ${e.desc}
+            </p>
+        </div>
+    </article>
+</div>
+   
+        `;
+  });
+
+window.onload = () => {
+    if(document.getElementById("booksWrapper")){
+      document.getElementById("booksWrapper").innerHTML = booksHTML.join("");
+    }
+   
+ 
+  };
+  

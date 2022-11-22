@@ -32,12 +32,9 @@ const negativeHabits = [
       title: 'السهر وقلة النوم ❌',
       desc: `
 حلول بسيطه جداً 
-بلاش تشرب كفايين فى وقت متاخر زي (الشاي او القهوه ) .  
-
+بلاش تشرب كافيين فى وقت متاخر زي (الشاي او القهوه ) .  
 مارس رياضة بدنية قبل متنام بأربعة  ساعات على الأقل  .
-
 ابعد عن التفكير وانت جالس على السرير  .
-
 مارس تمارين التأمل لأنها بتخلص من التوتر عشان تعرف تنام بعمق .`,
       img: '1'
   },
@@ -96,15 +93,15 @@ const habitsHtml = positiveHabits.map((e, i) => {
 });
 const negativeHabitsHtml = negativeHabits.map((e, i) => {
   return `
-<div class="row align-items-center   ${i %2 ===0 ? 'flex-row-reverse': ''} justify-content-center  g-0 mb-2-9">
+<div class="row   ${i %2 ===0 ? 'flex-row-reverse': ''} justify-content-center  g-0 mb-2-9">
 <div class="col-md-5 col-xl-4 bg-img cover-background min-height-350 ${i %2 ===0 ? 'border-end-md-radius-10 border-bottom-sm-radius-10': 'border-start-md-radius-10 border-top-sm-radius-10'} "
     data-background="../img/negative-habits/${e.img}.jfif"></div>
 <div class="col-md-7 col-xl-6">
-<div class="author">
+<div class="success-content d-flex flex-column justify-content-center h-100 border-end-md-radius-10 border-bottom-sm-radius-10">
+<div class="author mb-3">
 <h4 class="display-27 font-weight-800 mb-0 text-center"> ${e.title}</h4>
 </div>
-    <div class="success-content border-end-md-radius-10 border-bottom-sm-radius-10">
-        <p>
+        <p style="white-space:pre-line" class="text-start">
         ${e.desc}</p>
       
     </div>
