@@ -21,6 +21,19 @@ const sys = [
   },
 ];
 
-window.onload = () => {
-  document.getElementById("").innerHTML = '';
-};
+const sysHtml = sys.map((e, i) => {
+  return `
+    <div class="card">
+    <h2 class="card-header" id="heading${i}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}">
+        ${e.title}</button>
+    </h2>
+    <div id="collapse${i}" class="accordion-collapse collapse " aria-labelledby="heading${i}" data-bs-parent="#accordion">
+        <div class="card-body">
+           ${e.desc}
+        </div>
+    </div>
+</div>
+    `;
+});
+

@@ -214,7 +214,17 @@
                                                
                                             </div>
                                             <div id="sysWrapper">
-                                               
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <h3 class="h4 mb-4">
+                                                            أنواع الأنظمة الغذائية
+                                                        </h3>
+                                                        <div class="accordion" id="accordion">
+                                                          
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                
                                             </div>
                                             <div id="sysForPatiWrapper">
@@ -357,7 +367,16 @@
 
     <!-- custom scripts -->
     <script src="../js/custom.js"></script>
+    <script src="../data/foods-systems.js"></script>
     <script src="../data/calories.js"></script>
+    <script>
+        
+window.onload = () => {
+  document.getElementById("accordion").innerHTML = sysHtml.join('');
+  document.getElementById("calsWrapper").innerHTML = calsHtml.join('');
+
+};
+    </script>
 
 
 

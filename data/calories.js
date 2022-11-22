@@ -444,11 +444,5 @@ const calsHtml = calories.map((e, i) => {
 </div>`;
   });
 
-window.onload = () => {
-    console.log(
-        calsHtml
-    );
-    document.getElementById("calsWrapper").innerHTML = calsHtml.join('');
- 
-  };
+
   
