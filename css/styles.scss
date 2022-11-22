@@ -3968,12 +3968,12 @@ h2.resp-tab-active span.resp-arrow {
   height: 100%;
 }
 
-.author:before {
+.author:after {
   content: "";
   display: block;
   width: 75px;
   height: 2px;
-  margin: 0 auto 15px;
+  margin: 15px auto 0;
   background-color: $SecondaryColor;
 }
 
