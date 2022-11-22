@@ -107,7 +107,7 @@ const books = [
 
 const booksHTML = books.map((e, i) => {
     return `
-    <div  class="w-50 mt-2-9 float-${i%2!==0? 'start' : 'end'}">
+    <div  class="w-lg-50 mt-2-9 float-${i%2!==0? 'start' : 'end'}">
     <article class="card card-style4">
         <div class="image-box text-end">
             <img style="max-height: 200px" src="../img/social-books/${e.img}.${(i + 1) >= 8 ? 'jpeg': 'jfif'}" class="border-radius-10" alt="...">
