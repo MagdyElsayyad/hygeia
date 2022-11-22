@@ -226,10 +226,32 @@
                                                 </div>
                                                
                                             </div>
-                                            <div id="sysForPatiWrapper">
-                                               
+                                            <div >
+                                                 <!-- FAQ
+        ================================================== -->
+        <section>
+            <div class="container">
+                <div class="section-heading">
+                    <span class="text-secondary display-25 display-md-23 d-block mb-1">
+                        أغذية مناسبة لأصحاب الأمراض
+                    </span>
+                
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="accordion"  id="sysForPatiWrapper">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary p-2-2 rounded-circle position-absolute bottom-10 left-5 d-none d-lg-block"></div>
+            <div class="bg-primary p-3 rounded-circle position-absolute bottom-10 left-5 ani-top-bottom d-none d-lg-block"></div>
+        </section>
+
                                                
                                             </div>
+                                          
                                             
                                            
                                         </div>
@@ -373,6 +395,7 @@
 window.onload = () => {
   document.getElementById("accordion").innerHTML = sysHtml.join('');
   document.getElementById("calsWrapper").innerHTML = calsHtml.join('');
+  document.getElementById("sysForPatiWrapper").innerHTML = diseasHTML.join('');
 
 };
     </script>
