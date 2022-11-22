@@ -75,14 +75,14 @@ const negativeHabits = [
 const habitsHtml = positiveHabits.map((e, i) => {
   return `
     
-  <div class="row align-items-center ${i %2 ===0 ? 'flex-row-reverse': ''} justify-content-center  g-0 mb-2-9">
-  <div class="col-md-5 col-xl-4 bg-img cover-background min-height-350 ${i %2 ===0 ? 'border-end-md-radius-10 border-bottom-sm-radius-10': 'border-start-md-radius-10 border-top-sm-radius-10'} "
+  <div class="row  ${i %2 ===0 ? 'flex-row-reverse': ''} justify-content-center  g-0 mb-2-9">
+  <div class="col-md-5  col-xl-4 bg-img cover-background min-height-350 ${i %2 ===0 ? 'border-end-md-radius-10 border-bottom-sm-radius-10': 'border-start-md-radius-10 border-top-sm-radius-10'} "
       data-background="../img/positive-habits/${e.img}.jpg"></div>
   <div class="col-md-7 col-xl-6">
+  <div class="success-content d-flex flex-column justify-content-center text-start h-100 ${i %2 ===0 ?  'border-start-md-radius-10 border-top-sm-radius-10' : 'border-end-md-radius-10 border-bottom-sm-radius-10'}">
   <div class="author">
   <h4 class="display-27 font-weight-800 mb-0 text-center"> ${e.title}</h4>
 </div>
-      <div class="success-content border-end-md-radius-10 border-bottom-sm-radius-10">
           <p>
           ${e.desc}</p>
          
@@ -97,7 +97,7 @@ const negativeHabitsHtml = negativeHabits.map((e, i) => {
 <div class="col-md-5 col-xl-4 bg-img cover-background min-height-350 ${i %2 ===0 ? 'border-end-md-radius-10 border-bottom-sm-radius-10': 'border-start-md-radius-10 border-top-sm-radius-10'} "
     data-background="../img/negative-habits/${e.img}.jfif"></div>
 <div class="col-md-7 col-xl-6">
-<div class="success-content d-flex flex-column justify-content-center h-100 border-end-md-radius-10 border-bottom-sm-radius-10">
+<div class="success-content d-flex flex-column justify-content-center h-100 ${i %2 ===0 ?  'border-start-md-radius-10 border-top-sm-radius-10' : 'border-end-md-radius-10 border-bottom-sm-radius-10'} ">
 <div class="author mb-3">
 <h4 class="display-27 font-weight-800 mb-0 text-center"> ${e.title}</h4>
 </div>
