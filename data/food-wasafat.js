@@ -524,23 +524,145 @@ const foods = [
       },
     ],
   },
+  // =========================================
+  {
+    title: `الحلويات`,
+    img:``,
+    halawyat: true,
+    text: ``,
+    ways: [
+        {
+            title: `بان كيك صحي بالشوفان والموز`,
+            desc: `المقادير:
+1/2 كوب رقائق شوفان كامل غير مطحون .
+2 حبة موز مقشر ومقطع.
+2 حبة بيض.
+1/4 ملعقة صغيرة قرفة.
+1/4 ملعقة صغيرة فانيليا.
+1/2 ملعقة صغيرة بيكنج باودر.`,
+            img: `1`
+        },
+        {
+            title: `بسكويت الشوفان الصحي بالزبيب `,
+            desc: `لمقادير:
+1 كوب شوفان ملفوف .
+1 كوب دقيق قمح .
+1/2 كوب ستيفيا أو عسل .
+1/2 كوب زيت .
+1 ملعقة كبيرة من مسحوق الخبز  .
+عدد 2 بيضة .
+1 كوب زبيب .`,
+            img: `2`
+        },
+        {
+            title: `كيكة التمر بالشوفان الصحية`,
+            desc: `المقادير :
+3 بيضات 
+1 كوب سكر
+1 كوب زيت نباتي
+1/2 كوب دقيق 
+1/2  كوب شوفان
+1 ملعقة صغيرة من البيكينج بودر 
+1 ملعقة صغيرة قرفة
+رشة ملح
+مقادير الحشو :
+2 كوب تمر  .
+2 كوب ماء  .
+1 ملعقة صغيرة صودا 
+للتزيين : 
+1/4 كوب فستق جوز أو لوز حسب الرغبة`,
+            img: `3`
+        },
+        {
+            title: `بان كيك بالعسل`,
+            desc: `المقادير : 
+1 كوب من الدقيق.
+1 كوب من الحليب السائل.
+بيضة واحدة.
+1 ملعقة صغيرة من البيكنج باودر.
+1 ملعقة صغيرة من الفانيليا.`,
+            img: `4`
+        },
+        {
+            title: `كب كيك الفواكهه :`,
+            desc: `المقادير :
+2 ثمرة من التفاح المبشور . 
+2 ثمرة من الموز . 
+كوب ونصف من الدقيق . 
+2 ملعقة صغيرة من البيكنج باودر . 
+عدد 2 بيضة . 
+قالب صغير من الزبدة.
+قوالب الكب كيك .`,
+            img: `5`
+        },
+        {
+            title: `حلوي Quinoa almond : `,
+            desc: `المقادير : 
+100 ملليلتر من حليب الصويا . 
+60 جرام من جوز الهند .
+25 جرام من الشوكولاتة الداكنة.
+1/2 ملعقة صغيرة  من البيكنج باودر .
+100 جرام من اللوز المطحون .
+150 جرام من الدقيق . 
+عدد 3 بيضات . 
+125 جرام من قصب السكر .`,
+            img: `6`
+        },
+        {
+            title: `حلوي Banana mousse dessert`,
+            desc: `المقادير : 
+موزة واحدة  .
+50 جرام من اللبن الرائب .
+200 ملليلتر من الكريمة الطازجة . 
+1 ملعقة من العسل . 
+4 أوراق من النعناع `,
+            img: `7`
+        },
+        {
+            title: `البسبوسه`,
+            desc: `البسبوسة الصحية  :
+المقادير :
+البسبوسة الصحية :
+نص كوب زبادي
+4 معالق سميد
+معلقة جوز هند
+معلقة صغيرة زبدة طبيعي
+
+مكونات الشربات:
+نحتاج للشربات كوب ماء ملعقة عسل إذا كان الطفل أكبر من عام معلقة دبس تمر إذا كان الطفل أقل من عام.`,
+            img: `8`
+        },
+        {
+            title: ``,
+            desc: ``,
+            img: ``
+        },
+    ]
+},
+  
 ];
+
+
+
+
 const foodLabel = [];
 const foodCollection = foods
-  .filter((a) => a.title !== "" || a.desc !== "")
+  .filter((a) => a.title !== `` || a.text !== ``)
   .map((a, i) => {
-    const wasafat = a.ways
+    const wasafat = a.ways.filter((a) => a.title !== `` || a.desc !== ``)
       .map((b, bi) => {
         return `
-        <div class="row g-0 justify-content-center mb-1-6 mb-md-2-2 mb-xl-2-8">
-        <div class="col-md-12">
-            <div class="card border-0 border-end-radius-10 border-start-sm-radius-10 h-100 box-shadow-style1">
-                <div class="card-body p-1-9 p-lg-2-5">
+        <div class="row position-relative g-0 justify-content-center mb-1-6 mb-md-2-2 mb-xl-2-8">
+       
+        <div class="  col-md-12">
+            <div class="card border-0 d-flex flex-lg-row flex-column-reverse border-end-radius-10 border-start-sm-radius-10 h-100 box-shadow-style1">
+                <div class="card-body col-lg-8 p-1-9 p-lg-2-5">
                 ${b.title ? `<div class="schedule-tag">${b.title}</div>` : ""} 
                     <p  style="white-space:pre-line" class=" ">
                     ${b.desc}
                     </p>
                 </div>
+                ${a?.halawyat? `<div class="col-lg-4 text-lg-end text-center"><img class="rounded-3 shadow halwyat-img" style="height: 250px;" src="../img/sweets/${b.img}.jfif" alt="" /></div>` : ''}
             </div>
         </div>
     </div>

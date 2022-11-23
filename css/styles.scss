@@ -5888,3 +5888,20 @@ footer {
     }
   }
 }
+.halwyat-img{
+  height: 250px;
+position: relative;
+top: -19px;
+left: -19px;
+}
+
+@media (max-width: 500px) {
+  .halwyat-img{
+    max-height: 250px;
+  position: relative;
+  top: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  }
+}
